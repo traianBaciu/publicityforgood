@@ -1,0 +1,78 @@
+:root {
+  --general-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--general-size);
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--general-size);
+}
+.container {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: var(--general-size);
+}
+.title {
+  text-align: center;
+  margin-block-end: var(--general-size);
+}
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--general-size) * 2);
+  border-bottom: 1px solid #ccc;
+  padding-block-end: var(--general-size);
+}
+.product-info {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.product-info,
+.details-btn {
+  font-size: calc(var(--general-size) * 1.5);
+}
+.product-name {
+  font-weight: 700;
+}
+.details-btn {
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  font-size: var(--general-size);
+}
+.dollar {
+  color: green;
+}
+.tag {
+  font-weight: 700;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--general-size);
+}
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+.product-card > .details-btn {
+  display: inline-block;
+  margin-block-start: var(--general-size);
+  font-weight: 700;
+}
